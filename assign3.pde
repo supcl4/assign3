@@ -101,7 +101,7 @@ break;
  image(Imgx, fighterX, fighterY); //fighter
  image(Imgz, treasureX, treasureY); //treasure
  switch(enemyState){
- case(enemyOne):
+ case enemyOne:
  for(int i=0; i<COUNT; i++){
  image(Imgu,enemyX-i*70,enemyY); // enemy
  enemyX+=1; //spead
@@ -112,7 +112,7 @@ break;
  }
  break;
  
- case(enemyTwo):
+ case enemyTwo:
  for(int j=0; j<COUNT; j++){
  image(Imgu,enemyX-j*70,enemyY+j*70); // enemy
   enemyX+=1; //spead
@@ -123,7 +123,7 @@ break;
  }
  break;
  
- case(enemyThree):
+ case enemyThree :
  for(int k=0; k<COUNT; k++){
  if(k==0){image(Imgu,enemyX,enemyY);}
  if(k==1){image(Imgu,enemyX-k*70,enemyY+k*70);image(Imgu,enemyX-k*70,enemyY-k*70);}
