@@ -113,8 +113,8 @@ break;
  break;
  
  case(enemyTwo):
- for(int i=0; i<COUNT; i++){
- image(Imgu,enemyX-i*70,enemyY+i*70); // enemy
+ for(int j=0; j<COUNT; j++){
+ image(Imgu,enemyX-j*70,enemyY+j*70); // enemy
   enemyX+=1; //spead
  if(enemyX>1200){
  enemyX=0;enemyY=floor(random(150,250));
@@ -124,12 +124,12 @@ break;
  break;
  
  case(enemyThree):
- for(int i=0; i<COUNT; i++){
- if(i==0){image(Imgu,enemyX,enemyY);}
- if(i==1){image(Imgu,enemyX-i*70,enemyY+i*70);image(Imgu,enemyX-i*70,enemyY-i*70);}
- if(i==2){image(Imgu,enemyX-i*70,enemyY+i*70);image(Imgu,enemyX-i*70,enemyY-i*70);}
- if(i==3){image(Imgu,enemyX-i*70,enemyY+70);image(Imgu,enemyX-i*70,enemyY-70);}
- if(i==4){image(Imgu,enemyX-i*70,enemyY);}
+ for(int k=0; k<COUNT; k++){
+ if(k==0){image(Imgu,enemyX,enemyY);}
+ if(k==1){image(Imgu,enemyX-k*70,enemyY+k*70);image(Imgu,enemyX-k*70,enemyY-k*70);}
+ if(k==2){image(Imgu,enemyX-k*70,enemyY+k*70);image(Imgu,enemyX-k*70,enemyY-k*70);}
+ if(k==3){image(Imgu,enemyX-k*70,enemyY+70);image(Imgu,enemyX-k*70,enemyY-70);}
+ if(k==4){image(Imgu,enemyX-k*70,enemyY);}
  enemyX+=1;
  if(enemyX>1200){
  enemyX=0;enemyY=floor(random(80,320));
